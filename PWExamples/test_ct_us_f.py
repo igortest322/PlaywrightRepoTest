@@ -1,6 +1,6 @@
 from playwright.sync_api import Playwright, sync_playwright, expect
 #import pytest
-from contact_us_page import ContactUsPage
+from PWExamples.contact_us_page import ContactUsPage
 
 
 def test_submit_form(playwright: Playwright):
