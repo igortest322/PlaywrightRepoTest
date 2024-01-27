@@ -25,12 +25,11 @@ def run(playwright: Playwright) -> None:
             assert 'socks' not in link.text_content() and 'notepad' not in link.text_content()
 #    product = page.get_by_text('$85').first.locator('xpath=../../../../..//h3').text_content()
 #    assert product != 'Socks'
-    print("Passed")
-
+    
     # ---------------------
     context.close()
     browser.close()
-
+print("Passed")
 
 with sync_playwright() as playwright:
     run(playwright)
